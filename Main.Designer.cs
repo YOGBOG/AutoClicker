@@ -43,7 +43,6 @@
             this.Info = new System.Windows.Forms.Label();
             this.StartButton = new Siticone.Desktop.UI.WinForms.SiticoneGradientButton();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.range = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -188,7 +187,7 @@
             this.StartButton.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.StartButton.ForeColor = System.Drawing.Color.White;
             this.StartButton.HoverState.Parent = this.StartButton;
-            this.StartButton.Location = new System.Drawing.Point(12, 182);
+            this.StartButton.Location = new System.Drawing.Point(12, 150);
             this.StartButton.Name = "StartButton";
             this.StartButton.ShadowDecoration.Parent = this.StartButton;
             this.StartButton.Size = new System.Drawing.Size(333, 45);
@@ -201,25 +200,12 @@
             this.timer1.Interval = 1;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
-            // range
-            // 
-            this.range.AutoSize = true;
-            this.range.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.range.ForeColor = System.Drawing.Color.White;
-            this.range.Location = new System.Drawing.Point(12, 150);
-            this.range.Name = "range";
-            this.range.Size = new System.Drawing.Size(93, 20);
-            this.range.TabIndex = 12;
-            this.range.Text = "Range CPS";
-            this.range.Click += new System.EventHandler(this.label1_Click);
-            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(68)))));
-            this.ClientSize = new System.Drawing.Size(354, 236);
-            this.Controls.Add(this.range);
+            this.ClientSize = new System.Drawing.Size(354, 207);
             this.Controls.Add(this.StartButton);
             this.Controls.Add(this.MaxCpsValue);
             this.Controls.Add(this.MinCpsValue);
@@ -257,7 +243,6 @@
         private System.Windows.Forms.Label Info;
         private Siticone.Desktop.UI.WinForms.SiticoneGradientButton StartButton;
         private System.Windows.Forms.Timer timer1;
-        private System.Windows.Forms.Label range;
     }
 }
 
